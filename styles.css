@@ -1,0 +1,103 @@
+/* Define custom color variables */
+:root {
+    --light-grey: #f5f6f7;
+    --dark-blue: #0a0a23;
+    --fcc-blue: #1b1b32;
+    --light-yellow: #fecc4c;
+    --dark-yellow: #feac32;
+    --light-pink: #ffadad;
+    --dark-red: #850000;
+    --light-green: #acd157;
+  }
+  
+  /* General styling for the body */
+  body {
+    font-family: "Lato", Helvetica, Arial, sans-serif; /* Set font family */
+    font-size: 18px; /* Set default font size */
+    background-color: var(--fcc-blue); /* Set background color using custom variable */
+    color: var(--light-grey); /* Set text color using custom variable */
+  }
+  
+  /* Styling for main heading */
+  h1 {
+    text-align: center; /* Center align heading */
+  }
+  
+  /* Styling for container element */
+  .container {
+    width: 90%; /* Set width to 90% */
+    max-width: 680px; /* Set maximum width */
+  }
+  
+  /* Margin for main heading, container, and output */
+  h1,
+  .container,
+  .output {
+    margin: 20px auto; /* Set margin */
+  }
+  
+  /* Styling for labels and legends */
+  label,
+  legend {
+    font-weight: bold; /* Set font weight to bold */
+  }
+  
+  /* Styling for input container */
+  .input-container {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items in column direction */
+  }
+  
+  /* Styling for buttons */
+  button {
+    cursor: pointer; /* Set cursor to pointer */
+    text-decoration: none; /* Remove default text decoration */
+    background-color: var(--light-yellow); /* Set background color using custom variable */
+    border: 2px solid var(--dark-yellow); /* Set border */
+  }
+  
+  /* Styling for various elements */
+  button,
+  input,
+  select {
+    min-height: 24px; /* Set minimum height */
+    color: var(--dark-blue); /* Set text color using custom variable */
+  }
+  
+  /* Margin for fieldsets, labels, buttons, inputs, and selects */
+  fieldset,
+  label,
+  button,
+  input,
+  select {
+    margin-bottom: 10px; /* Set bottom margin */
+  }
+  
+  /* Styling for output container */
+  .output {
+    border: 2px solid var(--light-grey); /* Set border */
+    padding: 10px; /* Set padding */
+    text-align: center; /* Center align text */
+  }
+  
+  /* Hide output element by default */
+  .hide {
+    display: none; /* Hide element */
+  }
+  
+  /* Styling for output span */
+  .output span {
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 1.2em; /* Set font size */
+  }
+  
+  /* Styling for surplus text */
+  .surplus {
+    color: var(--light-pink); /* Set text color using custom variable */
+  }
+  
+  /* Styling for deficit text */
+  .deficit {
+    color: var(--light-green); /* Set text color using custom variable */
+  }
+  

@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Title of the page -->
     <title>Calorie Counter</title>
   </head>
   <body>
     <main>
+      <!-- Main heading -->
       <h1>Calorie Counter</h1>
       <div class="container">
+        <!-- Form for calorie counter -->
         <form id="calorie-counter">
+          <!-- Input field for daily calorie budget -->
           <label for="budget">Budget</label>
           <input
             type="number"
@@ -19,6 +25,7 @@
             placeholder="Daily calorie budget"
             required
           />
+          <!-- Fieldsets for different meal types -->
           <fieldset id="breakfast">
             <legend>Breakfast</legend>
             <div class="input-container"></div>
@@ -39,6 +46,7 @@
             <legend>Exercise</legend>
             <div class="input-container"></div>
           </fieldset>
+          <!-- Dropdown and button for adding entries -->
           <div class="controls">
             <span>
               <label for="entry-dropdown">Add food or exercise:</label>
@@ -52,6 +60,7 @@
               <button type="button" id="add-entry">Add Entry</button>
             </span>
           </div>
+          <!-- Buttons for submitting and clearing form -->
           <div>
             <button type="submit">
               Calculate Remaining Calories
@@ -59,9 +68,11 @@
             <button type="button" id="clear">Clear</button>
           </div>
         </form>
+        <!-- Output container for displaying results -->
         <div id="output" class="output hide"></div>
       </div>
     </main>
+    <!-- Script tag to include JavaScript file -->
     <script src="./script.js"></script>
   </body>
 </html>
